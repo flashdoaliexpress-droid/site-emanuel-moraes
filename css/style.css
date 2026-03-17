@@ -258,30 +258,13 @@ button {
 .nav__logo {
     display: flex;
     align-items: center;
-    gap: 11px;
     flex-shrink: 0;
 }
 
-.nav__logo-mark {
-    width: 38px;
-    height: 38px;
-    background: var(--wine);
-    color: var(--white);
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 0.95rem;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.02em;
-}
-
-.nav__logo-text {
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--black);
+.nav__logo-img {
+    height: 48px;
+    width: auto;
+    display: block;
 }
 
 /* Menu */
@@ -928,10 +911,11 @@ button {
     gap: 6px;
 }
 
-.footer__name {
-    font-family: var(--serif);
-    font-size: 1.35rem;
-    font-weight: 700;
+.footer__logo-img {
+    height: 44px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
 }
 
 .footer__tagline {
