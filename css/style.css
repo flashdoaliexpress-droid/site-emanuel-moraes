@@ -445,8 +445,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 
 .sobre__content {
-    padding: 80px 5% 80px 60px;
-    max-width: 680px;
+    padding: 80px clamp(24px, 5vw, 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -746,8 +745,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 
 .contato__content {
-    padding: 80px 5% 80px 60px;
-    max-width: 680px;
+    padding: 80px clamp(24px, 5vw, 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -890,7 +888,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     }
     .sobre__content,
     .contato__content {
-        padding: 60px 40px 60px 48px;
+        padding: 60px 36px;
     }
 }
 

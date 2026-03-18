@@ -23,6 +23,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Preload hero image para carregamento imediato -->
+    <link rel="preload" as="image" href="Imagens/Imagem%20Hero.png">
+
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -127,7 +130,7 @@
                             src="Imagens/Imagem%20Sobre.jpg"
                             alt="Emanuel Moraes em ambiente profissional"
                             class="sobre__image"
-                            loading="lazy"
+                            loading="lazy" decoding="async"
                         >
                     </div>
                 </div>
@@ -200,7 +203,7 @@
                         src="Imagens/Imagem%20Sess%C3%A3o%20que%20mostra%20as%20especialidades.png"
                         alt="Emanuel Moraes treinando aluno"
                         class="servicos__image"
-                        loading="lazy"
+                        loading="lazy" decoding="async"
                     >
                 </div>
 
@@ -339,19 +342,19 @@
                         src="Imagens/Prova%20social.png"
                         alt="Aluno de Emanuel Moraes"
                         class="alunos__gallery-img"
-                        loading="lazy"
+                        loading="lazy" decoding="async"
                     >
                     <img
                         src="Imagens/Imagem%20de%20aluno.png"
                         alt="Aluna de Emanuel Moraes"
                         class="alunos__gallery-img"
-                        loading="lazy"
+                        loading="lazy" decoding="async"
                     >
                     <img
                         src="Imagens/Imagem%20de%20aluno%20(2).png"
                         alt="Aluna de Emanuel Moraes levantando peso"
                         class="alunos__gallery-img"
-                        loading="lazy"
+                        loading="lazy" decoding="async"
                     >
                 </div>
 
@@ -445,7 +448,7 @@
                             src="Imagens/Imagem%20da%20sess%C3%A3o%20do%20ultimo%20CTA.jpg"
                             alt="Emanuel Moraes – Vamos transformar sua vida juntos"
                             class="contato__image"
-                            loading="lazy"
+                            loading="lazy" decoding="async"
                         >
                     </div>
                 </div>
@@ -454,7 +457,7 @@
                     <span class="eyebrow">Vamos Começar</span>
                     <h2 class="section-title">Pronto para Transformar Sua Vida?</h2>
                     <p class="contato__desc">
-                        Eu estou aqui para te levar ao próximo nível. Escolha presencial em Felixlândia ou online – o resultado é o mesmo: seu objetivo realizado. Meu atendimento premium garante que você nunca se sinta sozinho nessa jornada.
+                        Eu estou aqui para te levar ao próximo nível. Treinamento presencial ou online – o resultado é o mesmo: seu objetivo realizado. Meu atendimento premium garante que você nunca se sinta sozinho nessa jornada.
                     </p>
 
                     <a
