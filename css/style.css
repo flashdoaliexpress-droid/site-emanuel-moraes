@@ -495,6 +495,40 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     flex-shrink: 0;
 }
 
+.certs-group-title {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin: 18px 0 10px;
+}
+.certs-group-title:first-of-type { margin-top: 4px; }
+
+.certs-list--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 12px;
+}
+
+.certs-item--sm {
+    font-size: 0.82rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+.certs-year {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.4);
+    flex-shrink: 0;
+}
+
 /* =============================================
    PARCERIA NUTRICIONISTA
    ============================================= */
