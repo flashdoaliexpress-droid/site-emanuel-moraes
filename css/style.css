@@ -598,6 +598,18 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     color: var(--gray-light);
 }
 
+.parceria__insta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    margin-top: 8px;
+    transition: color var(--dur);
+}
+.parceria__insta:hover { color: var(--white); }
+
 .parceria__image-col {
     display: flex;
     justify-content: center;
