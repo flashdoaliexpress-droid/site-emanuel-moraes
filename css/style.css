@@ -1086,9 +1086,31 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
    CONHEÇA MAIS – VÍDEO
    ============================================= */
 .conheca {
-    background: var(--bg);
+    background: var(--bg-dark);
     padding: 100px 0;
-    border-top: 1px solid var(--gray-border);
+    border-top: 1px solid var(--wine);
+    border-bottom: 1px solid var(--wine);
+}
+
+.conheca__titulo {
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+}
+
+.conheca__destaque {
+    font-style: italic;
+    color: #D4A04A;
+    position: relative;
+    white-space: nowrap;
+}
+.conheca__destaque::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #D4A04A, transparent);
+    border-radius: 2px;
 }
 
 .conheca__video-wrap {
