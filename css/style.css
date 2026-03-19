@@ -780,8 +780,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 
 .alunos__gallery--transf {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 720px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -989,6 +989,97 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 
 .plano-card__obs strong {
     color: rgba(255,255,255,0.85);
+}
+
+.combo-selo-ouro {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #B8860B, #F0C040, #B8860B);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(201, 162, 39, 0.5);
+}
+.combo-selo-ouro svg {
+    width: 20px;
+    height: 20px;
+    fill: #3a2000;
+    flex-shrink: 0;
+}
+
+/* =============================================
+   REVIEWS – DEPOIMENTOS
+   ============================================= */
+.reviews {
+    background: var(--bg);
+    padding: 100px 0;
+    border-top: 1px solid var(--gray-border);
+}
+
+.reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--gray-border);
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur);
+}
+.review-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.review-stars {
+    color: #D4AF37;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    line-height: 1.75;
+    flex: 1;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.review-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.review-plan {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--wine);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 20px;
 }
 
 /* =============================================
@@ -1301,6 +1392,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
         gap: 14px;
     }
 
+    /* ---- REVIEWS ---- */
+    .reviews { padding: 72px 0; }
+    .reviews__grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
     /* ---- PLANOS ---- */
     .planos { padding: 72px 0; }
     .planos__grid { grid-template-columns: 1fr; }
@@ -1349,6 +1444,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     .alunos__gallery { grid-template-columns: 1fr; }
     .servicos { padding: 56px 0; }
     .alunos { padding: 56px 0; }
+    .reviews { padding: 56px 0; }
+    .reviews__grid { grid-template-columns: 1fr; }
     .planos { padding: 56px 0; }
     .conheca { padding: 56px 0; }
     .section-header { margin-bottom: 36px; }
