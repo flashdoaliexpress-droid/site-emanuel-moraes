@@ -616,13 +616,14 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.06em;
-    color: var(--white);
-    border: 1px solid rgba(255,255,255,0.5);
+    color: var(--wine);
+    background: var(--white);
+    border: 1px solid var(--white);
     border-radius: 4px;
     padding: 5px 13px;
-    transition: color var(--dur), border-color var(--dur);
+    transition: color var(--dur), background var(--dur), border-color var(--dur);
 }
-.parceria__vermais:hover { color: var(--white); border-color: var(--white); }
+.parceria__vermais:hover { color: var(--wine); background: var(--white); border-color: var(--white); }
 
 .parceria__image-col {
     display: flex;
