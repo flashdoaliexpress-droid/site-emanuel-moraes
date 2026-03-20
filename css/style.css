@@ -247,7 +247,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 
 .nav__logo-img {
-    height: 110px;
+    height: 140px;
     width: auto;
     display: block;
     object-fit: contain;
